@@ -55,6 +55,8 @@
     height: 15px;
 }
 
+/* Mobile device */
+
 @media (max-width:468px) {
     .announcementBar {
         gap: 20px;
