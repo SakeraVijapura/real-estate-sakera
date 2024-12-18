@@ -8,4 +8,4 @@ const Properties = () => {
     )
 }
 
-export default Properties
+export default Properties;
