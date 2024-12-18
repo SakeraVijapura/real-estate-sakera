@@ -1,11 +1,11 @@
 import style from './Services.module.css'
 
-const AboutUs = () => {
+const Services = () => {
     return (
-        <div>
+        <div className={style.services}>
             Services
         </div>
     )
 }
 
-export default AboutUs
+export default Services

@@ -2,7 +2,7 @@ import style from './Properties.module.css'
 
 const Properties = () => {
     return (
-        <div>
+        <div className={style.properties}>
             Properies
         </div>
     )
