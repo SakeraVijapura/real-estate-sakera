@@ -1,0 +1,84 @@
+/* Announcement Bar */
+.announcementBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey10);
+    background-image: url('../../../assets/images/TopBannerAbstractDesign.png');
+    background-position: right;
+    background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+    padding: 8px 30px;
+}
+
+.announcementBar p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.announcementBar div {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.announcementBar .learnMore {
+    color: var(--primary-color);
+    margin-left: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: var(--grey60);
+}
+
+.announcementBar .learnMore:hover {
+    cursor: pointer;
+}
+
+.announcementBar .closeBtn {
+    background-color: var(--grey40);
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.announcementBar .closeBtn svg {
+    width: 15px;
+    height: 15px;
+}
+
+@media (max-width:468px) {
+    .announcementBar {
+        gap: 20px;
+        padding: 10px 15px;
+    }
+
+    .announcementBar div {
+        justify-content: flex-start;
+    }
+
+    .announcementBar p,
+    .announcementBar .learnMore {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:370px) {
+    .announcementBar {
+        gap: 10px;
+        padding: 10px 10px;
+    }
+
+    .announcementBar .closeBtn {
+        height: 20px;
+        width: 20px;
+    }
+}

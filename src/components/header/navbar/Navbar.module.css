@@ -1,0 +1,123 @@
+/* Navbar */
+.navBar {
+    max-width: 100%;
+    /* display: flex;
+    justify-content: space-between !important; */
+    align-items: center;
+    background-color: var(--grey10) !important;
+    padding: 12px 80px;
+}
+
+.navBar .logo {
+    flex-grow: 1 !important;
+}
+
+.navBar .custCollapse {
+    justify-content: space-between;
+}
+
+.navBar ul {
+    gap: 4px;
+}
+
+.navBar ul a.active {
+    background-color: var(--grey08) !important;
+    border: 1px solid var(--grey15) !important;
+    transition: 1s all;
+}
+
+.navBar ul li a {
+    color: var(--primary-color) !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px !important;
+    border-radius: 8px;
+    border: 1px solid var(--grey10);
+    text-decoration: none !important;
+    transition: 1s all;
+}
+
+.navBar button.contactUs {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding: 12px 20px !important;
+    border-radius: 8px;
+    border: 1px solid var(--grey15);
+    background-color: var(--grey08);
+}
+
+.navBar button.contactUs:hover {
+    background-color: var(--grey15);
+    transition: 1s all;
+}
+
+.navBar button.contactUs:hover {
+    box-shadow: none !important;
+}
+
+.navBar .togglerBtn {
+    border: 1px solid transparent;
+}
+
+.navBar .togglerBtn:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--grey15);
+}
+
+.navBar button span {
+    background-image: none !important;
+}
+
+
+@media (max-width:992px) {
+    .navBar {
+        padding: 12px 60px;
+    }
+
+    .navBar .custCollapse {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navBar ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    .navBar ul li a {
+        width: 100%;
+    }
+
+    .navBar ul li:first-child {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .navBar {
+        padding: 12px 40px;
+    }
+}
+
+@media (max-width:468px) {
+    .navBar {
+        padding: 12px 15px;
+    }
+
+    .navBar .logo img {
+        width: 94px;
+        height: 28px;
+    }
+}
+
+@media (max-width:468px) {
+    .navBar {
+        padding: 12px 10px;
+    }
+
+    .navBar .togglerBtn {
+        padding: 8px 8px !important;
+    }
+}
