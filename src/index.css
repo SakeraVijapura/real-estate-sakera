@@ -9,26 +9,50 @@ body {
   font-family: 'Urbanist-Regular';
 }
 
-p,
+p {
+  margin: 0;
+}
+
+
 h2,
 h3,
 h4 {
   margin: 0;
+  letter-spacing: 1px;
 }
 
 /* color Variables */
 
 :root {
+  /* White Shaded color */
+  --white: #FFFFFF;
+  --white90: #E4E4E7;
+  --white95: #F1F1F3;
+  --white97: #F7F7F8;
+  --white99: #FCFCFD;
 
+  /* Black Shaded color */
+
+  /* Purple Shaded color */
+  --purple60: #703BF7;
+  --purple65: #8254F8;
+  --purple70: #946CF9;
+  --purple75: #A685FA;
+  --purple90: #DBCEFD;
+  --purple95: #EDE7FE;
+  --purple97: #EDE7FE;
+  --purple99: #FBFAFF;
+
+  /* Grey Shaded color */
+  --grey: #191919;
   --grey08: #141414;
   --grey10: #1A1A1A;
   --grey15: #262626;
+  --grey20: #333333;
   --grey30: #4D4D4D;
   --grey40: #666666;
+  --grey50: #808080;
   --grey60: #999999;
-  --primary-color: #FFFFFF;
-  --purple60: #703BF7;
-  --purple75: #A685FA;
 }
 
 /* Urbanist Fonts */

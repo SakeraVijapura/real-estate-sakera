@@ -40,6 +40,7 @@ const App = () => {
   return (
     <div>
       <RouterProvider router={routers} />
+      {/* <Home /> */}
     </div>
   )
 }

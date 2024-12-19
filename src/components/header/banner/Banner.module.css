@@ -9,7 +9,7 @@
     background-blend-mode: difference;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--primary-color);
+    color: var(--white);
     padding: 8px 30px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .announcementBar .learnMore {
-    color: var(--primary-color);
+    color: var(--white);
     margin-left: 6px;
     font-size: 14px;
     font-weight: 500;

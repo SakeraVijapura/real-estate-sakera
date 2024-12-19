@@ -4,14 +4,16 @@ import style from './Header.module.css';
 
 const Header = () => {
     return (
-        <header className={style.header}>
+        <div className={style.header}>
+            <header>
 
-            {/* Banner */}
-            <Banner />
+                {/* Banner */}
+                <Banner />
 
-            {/* Navbar */}
-            <Navbar />
-        </header>
+                {/* Navbar */}
+                <Navbar />
+            </header>
+        </div>
     );
 };
 

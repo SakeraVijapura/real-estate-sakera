@@ -1,0 +1,113 @@
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    gap: 10px;
+    border: 1px solid var(--grey15);
+    box-shadow: 0px 0px 0px 6px var(--grey);
+}
+
+.featuresGrid .custCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    background-color: var(--grey10);
+    border: 1px solid var(--grey15);
+    border-radius: 10px;
+    padding: 30px 16px;
+    height: 100%;
+    position: relative;
+}
+
+.featuresGrid .custCard .iconContainer {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-image-source: linear-gradient(130.5deg, #A685FA -3.27%, rgba(166, 133, 250, 0) 30.09%),
+        linear-gradient(305.31deg, #A685FA -20.93%, rgba(166, 133, 250, 0) 37.94%); */
+}
+
+.featuresGrid .custCard .arrowIcon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    height: 20px;
+    width: 20px;
+    fill: var(--grey30);
+}
+
+.featuresGrid .custCard .iconContainer svg {
+    fill: var(--purple75);
+    width: 20px;
+    height: 20px;
+}
+
+.featuresGrid .custCard h5 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+@media (max-width:826px) {
+    .featuresGrid .custCard {
+        padding: 25px 14px;
+    }
+
+    .featuresGrid .custCard h5 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .featuresGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .featuresGrid {
+        border-radius: 12px;
+        margin: 0 16px;
+    }
+
+    .featuresGrid .custCard .arrowIcon {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width:468px) {
+    .featuresGrid .custCard {
+        padding: 20px 14px;
+    }
+
+    .featuresGrid .custCard .arrowIcon {
+        top: 15px;
+        right: 15px;
+        height: 16px;
+        width: 16px;
+    }
+}
+
+@media (max-width:400px) {
+    .featuresGrid .custCard {
+        padding: 15px 8px;
+    }
+
+    .featuresGrid .custCard h5 {
+        font-size: 12px;
+        line-height: 18px;
+
+    }
+}

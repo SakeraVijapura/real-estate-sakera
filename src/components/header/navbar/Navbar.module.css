@@ -1,8 +1,6 @@
 /* Navbar */
 .navBar {
     max-width: 100%;
-    /* display: flex;
-    justify-content: space-between !important; */
     align-items: center;
     background-color: var(--grey10) !important;
     padding: 12px 80px;
@@ -27,7 +25,7 @@
 }
 
 .navBar ul li a {
-    color: var(--primary-color) !important;
+    color: var(--white) !important;
     font-size: 14px;
     font-weight: 500;
     padding: 12px 20px !important;
@@ -35,12 +33,13 @@
     border: 1px solid var(--grey10);
     text-decoration: none !important;
     transition: 1s all;
+    display: block;
 }
 
 .navBar button.contactUs {
     font-size: 14px;
     font-weight: 500;
-    color: var(--primary-color);
+    color: var(--white);
     padding: 12px 20px !important;
     border-radius: 8px;
     border: 1px solid var(--grey15);
@@ -49,7 +48,7 @@
 
 .navBar button.contactUs:hover {
     background-color: var(--grey15);
-    transition: 1s all;
+    transition: 1s ease-in-out;
 }
 
 .navBar button.contactUs:hover {
@@ -66,19 +65,13 @@
 }
 
 .navBar button span {
-    background-image: none !important;
+    background-image: url('../../../assets/images/toggleImg.png') !important;
 }
 
 
 @media (max-width:992px) {
     .navBar {
         padding: 12px 60px;
-    }
-
-    .navBar .custCollapse {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
     }
 
     .navBar ul li {
@@ -92,6 +85,16 @@
 
     .navBar ul li:first-child {
         margin-top: 15px;
+    }
+
+    .navBar ul li:last-child {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:1024px) {
+    .navBar {
+        padding: 12px 50px;
     }
 }
 

@@ -1,0 +1,13 @@
+.header {
+    height: 111px;
+    width: 100%;
+    position: relative;
+}
+
+.header header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
