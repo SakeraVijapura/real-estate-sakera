@@ -1,4 +1,4 @@
-import FeaturesGrid from "./FeaturesGrid"
+import FeaturesGrid from "../../components/FeaturesGrid"
 import HeroSection from "./HeroSection"
 import style from "./Home.module.css"
 

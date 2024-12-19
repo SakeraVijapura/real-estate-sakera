@@ -28,13 +28,11 @@
     height: 44px;
     padding: 10px;
     gap: 10px;
-    border-radius: 100%;
-    position: relative;
+    border-radius: 50%;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-image-source: linear-gradient(130.5deg, #A685FA -3.27%, rgba(166, 133, 250, 0) 30.09%),
-        linear-gradient(305.31deg, #A685FA -20.93%, rgba(166, 133, 250, 0) 37.94%); */
 }
 
 .featuresGrid .custCard .arrowIcon {
